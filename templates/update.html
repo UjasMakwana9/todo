@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+
+    <form action="/update/{{to.sr}}" method="post">
+        <div class="mb-3">
+            <label for="val" class="form-label">Enter Your Tasks</label>
+            <input type="text" name="val" value="{{to.val}}" class="form-control" id="val" aria-describedby="emailHelp">
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+{% endblock body %}
